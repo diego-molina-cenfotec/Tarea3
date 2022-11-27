@@ -1,10 +1,19 @@
+import modelo.Animal;
+import modelo.Avistamiento;
+import modelo.Usuario;
+
 import java.io.*;
+import java.util.ArrayList;
 
 public class Main {
 
     // variables globales
     static BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
     static PrintStream salida = System.out;
+    private ArrayList<Usuario> usuarios = new ArrayList<>();
+    private ArrayList<Animal> animales = new ArrayList<>();
+    private ArrayList<Avistamiento> avistamientos = new ArrayList<>();
+
     // metodos utilitarios mostrar y leer
     static String leerTexto()throws IOException{
         return entrada.readLine();
