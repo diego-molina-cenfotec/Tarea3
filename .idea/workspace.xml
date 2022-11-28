@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9256916f-a386-4161-99e4-760a457b7403" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modelo/Adm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Ave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Direccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/ObjParaObservacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/ObsExtrajero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/ObsLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Observador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/TipoAlimentacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Ave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Ave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Avistamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Avistamiento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669590508733</updated>
       <workItem from="1669590513123" duration="6064000" />
-      <workItem from="1669596698361" duration="14750000" />
+      <workItem from="1669596698361" duration="17534000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit. estructura basica y plabtilla de menu en main.">
       <created>1669592180669</created>
@@ -88,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669593245911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="se incluye las clases con respectivo codigo para representar asociacion, agregación, composición y clase absatracta e Interfase">
+      <created>1669615309141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669615309141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +107,7 @@
     <MESSAGE value="Primer commit. estructura basica y plabtilla de menu en main." />
     <MESSAGE value="se incluye los Arralist en la clase main para guardar los datos" />
     <MESSAGE value="primeras 3 clases, animal y usuario son abstractas" />
-    <option name="LAST_COMMIT_MESSAGE" value="primeras 3 clases, animal y usuario son abstractas" />
+    <MESSAGE value="se incluye las clases con respectivo codigo para representar asociacion, agregación, composición y clase absatracta e Interfase" />
+    <option name="LAST_COMMIT_MESSAGE" value="se incluye las clases con respectivo codigo para representar asociacion, agregación, composición y clase absatracta e Interfase" />
   </component>
 </project>

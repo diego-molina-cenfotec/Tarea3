@@ -2,6 +2,7 @@ import modelo.*;
 
 import java.io.*;
 import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Main {
@@ -74,11 +75,11 @@ public class Main {
                 break;
             case 5:
                 mostrarTexto("Escogio la opcion 5 Registrar Mamifero");
-                //registrarMamifero();
+                registrarMamifero();
                 break;
             case 6:
                 mostrarTexto("Escogio la opcion 6 Registrar Avistamiento");
-                //registrarAvistamiento();
+                registrarAvistamiento();
                 break;
             case 7:
                 mostrarTexto("Escogio la opcion 7 Listar Todo: Usuarios, Animales y Avistamientos");
@@ -90,9 +91,43 @@ public class Main {
         }
     }
 
-    private static void registrarAve() {
-    }
+    private static void registrarAvistamiento() throws IOException {
+        LocalDate fechaAvistamiento = LocalDate.now();
 
+        mostrarTexto("seleccione el numero corresponda al observador");
+        for (int i = 0; i <usuarios.size() ; i++) {
+            mostrarTexto("El número de usaurio "+String.valueOf(i+1)+" es: "+usuarios.get(i).toString());
+        }
+        int posicion = Integer.parseInt(leerTexto())-1;
+        Usuario observador = usuarios.get(posicion);
+
+        mostrarTexto("indicar numero corresponde al animal");
+        for (int i = 0; i < animales.size() ; i++) {
+            mostrarTexto(String.valueOf(i+1)+" es: "+animales.get(i).toString());
+        }
+        int posAnimal= Integer.parseInt(leerTexto())-1;
+        Animal animal = animales.get(posAnimal);
+
+        mostrarTexto("indique cual dirección");
+        for (int i = 0; i <direcciones.size() ; i++) {
+            mostrarTexto(String.valueOf(i)+" "+direcciones.get(i).toString());
+        }
+        int posDir = Integer.parseInt(leerTexto());
+        Direccion ubicación = direcciones.get(posDir);
+        Avistamiento avistamiento = new Avistamiento(fechaAvistamiento,observador,animal,ubicación);
+        avistamientos.add(avistamiento);
+        }
+        /*
+        Avistamiento(LocalDate fechaAvistamiento, Usuario observador, Animal animal, Direccion ubicación)
+         */
+    private static void registrarMamifero() {
+    }
+    private static void registrarAve() {
+        Ave tmpAve = new Ave(true,"mediana","pico grueso");
+        animales.add(tmpAve);
+        Ave otraAve = new Ave(true,"pequeña","pico agudo");
+        animales.add(otraAve);
+    }
     public static void registrarAdministrador() throws IOException {
         mostrarTexto("ingrese email");
         String email = leerTexto();

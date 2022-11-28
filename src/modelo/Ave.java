@@ -8,13 +8,11 @@ public class Ave extends Animal implements TipoAlimentacion {
 
     public Ave() {
     }
-
     public Ave(boolean estaVivo, String tamanio, String tipoPico) {
         super(estaVivo, tamanio);
         this.tipoPico = tipoPico;
         formaAlimentacion = formaAlimentacion();
     }
-
     @Override
     public String formaAlimentacion() {
         String alimentacion = " ";
@@ -26,5 +24,21 @@ public class Ave extends Animal implements TipoAlimentacion {
             }
         }
         return alimentacion;
+    }
+
+    public String getTipoPico() {
+        return tipoPico;
+    }
+
+    public void setTipoPico(String tipoPico) {
+        this.tipoPico = tipoPico;
+    }
+
+    @Override
+    public String toString() {
+        return "Ave{" + super.toString()+
+                "tipoPico='" + tipoPico + '\'' +
+                ", formaAlimentacion='" + formaAlimentacion + '\'' +
+                '}';
     }
 }// fin clase
